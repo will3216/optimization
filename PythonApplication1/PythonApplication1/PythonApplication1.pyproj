@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8ba7a793-3085-4753-b8ac-f68c4ef09f6e}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Program.py</StartupFile>
+    <SearchPath>C:\Users\Will\Documents\Visual Studio 2010\Projects\PythonApplication1\PythonApplication1\g2p\;C:\Users\Will\Documents\Visual Studio 2010\Projects\PythonApplication1\PythonApplication1\Models\;C:\Users\Will\Documents\Visual Studio 2010\Projects\PythonApplication1\PythonApplication1\ObjectClasses</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="g2p\gams_to_python.py" />
+    <Compile Include="g2p\module1.py" />
+    <Compile Include="g2p\module2.py" />
+    <Compile Include="file_dir_operations.py" />
+    <Compile Include="custom_np_fxns.py" />
+    <Compile Include="temp_fxn_builder.py" />
+    <Compile Include="ObjectClasses\base_equation.py" />
+    <Compile Include="ObjectClasses\direct_assign.py" />
+    <Compile Include="ObjectClasses\equation.py" />
+    <Compile Include="ObjectClasses\fxn_conv_objects.py" />
+    <Compile Include="ObjectClasses\model_base.py" />
+    <Compile Include="ObjectClasses\parameter_list.py" />
+    <Compile Include="ObjectClasses\opti_model.py" />
+    <Compile Include="ObjectClasses\scalar.py" />
+    <Compile Include="ObjectClasses\set.py" />
+    <Compile Include="ObjectClasses\table.py" />
+    <Compile Include="ObjectClasses\variable.py" />
+    <Compile Include="Program.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="g2p" />
+    <Folder Include="Models" />
+    <Folder Include="ObjectClasses" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ToDoList.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

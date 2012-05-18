@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{efb2f690-ed7f-4d41-bc8c-741f2ff854eb}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>DSL</Name>
+    <RootNamespace>DSL</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="PythonApplication1\" />
+    <Folder Include="PythonApplication1\custom_functions\" />
+    <Folder Include="PythonApplication1\g2p\" />
+    <Folder Include="PythonApplication1\Models\" />
+    <Folder Include="PythonApplication1\Models\test\" />
+    <Folder Include="PythonApplication1\ObjectClasses\" />
+    <Folder Include="PythonApplication1\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PythonApplication1\custom_functions\built_in_functions.py" />
+    <Compile Include="PythonApplication1\custom_np_fxns.py" />
+    <Compile Include="PythonApplication1\file_dir_operations.py" />
+    <Compile Include="PythonApplication1\g2p\gams_to_python.py" />
+    <Compile Include="PythonApplication1\g2p\module1.py" />
+    <Compile Include="PythonApplication1\g2p\module2.py" />
+    <Compile Include="PythonApplication1\gams2python.py" />
+    <Compile Include="PythonApplication1\Models.test.py" />
+    <Compile Include="PythonApplication1\Models\test.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\base_equation.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\direct_assign.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\equation.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\fxn_conv_objects.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\model_base.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\opti_model.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\parameter_list.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\scalar.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\set.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\table.py" />
+    <Compile Include="PythonApplication1\ObjectClasses\variable.py" />
+    <Compile Include="PythonApplication1\Program.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
