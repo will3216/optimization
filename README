@@ -1,0 +1,7 @@
+These are some of the preliminary codes and structures for a piece of local search optimization software.
+
+So far, a script has been written to parse a GAMS input code into python objects. 
+
+The piece of code I am currently working on is nearly finished. This code to feed these raw inputs into classes, 
+determined by their definition in the original code, to finish processing them into Component objects; which are 
+compatible with the Open MDAO optimization framework. 
