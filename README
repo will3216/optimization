@@ -1,8 +1,11 @@
-These are some of the preliminary codes and structures for a piece of local search optimization software.
+These are some of the preliminary codes and structures for a piece of local 
+search optimization software.
 
-So far, a script has been written to parse a GAMS input code into raw python input objects. 
+So far, a script has been written to parse a GAMS input code into raw python 
+input objects. 
 
-The piece of code I am currently working on is nearly finished. This code should feed raw python inputs 
-into classes, determined by their definition in the original code, to finish processing their data. Then, 
-the OptiModel class should be able to print these objects into a template which creates new Component 
-objects; compatible with the Open MDAO optimization framework. 
+The piece of code I am currently working on is nearly finished. This code 
+should feed raw python inputs into classes, determined by their definition 
+in the original code, to finish processing their data. Then, the OptiModel 
+class should be able to print these objects into a template which creates 
+new Component objects; compatible with the Open MDAO optimization framework. 
